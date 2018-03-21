@@ -5,8 +5,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="./asset/js/translation.js"></script>
-	<script type="module" src="./asset/js/functions.js"></script>
-	<script nomodule src="./asset/js/nofunctions.js"></script>
+	<script  src="./asset/js/functions.js"></script>
 </head>
 <body>
 	<nav class="navbar is-primary">
@@ -55,7 +54,7 @@
 	      <a class="navbar-item" href="#">
 	        <translate data-lng="cv"></translate>
 	      </a>
-	      <a class="navbar-item" href="#">
+	      <a class="navbar-item" href="projects.html">
 	        <translate data-lng="projects"></translate>
 	      </a>
 	      <a class="navbar-item" href="#">
@@ -91,7 +90,7 @@
 	    </div>
 	</section>
 	<section id="social-networks">
-	    <div class="container">
+		<div class="container is-desktop">
 		    <h1 class="title"><translate data-lng="socialNetworks"></translate></h1>
 		    <div class="columns is-mobile">
 		    	<div class="column">
@@ -123,75 +122,89 @@
 					</a>
 		    	</div>		    	
 		   	</div>	      
-	    </div>
+		</div>
 	</section>
 	<section id="contact-form">
 		<div class="container">
-			<h1 class="title"><translate data-lng="contactus"></translate></h1>
+		<div class="columns is-desktop is-tablet">
+			<div class="column is-half is-offset-one-quarter">
+				<h1 class="title"><translate data-lng="contactus"></translate></h1>
 
-			<div class="field">
-			  <label class="label"><translate data-lng="name"></translate></label>
-			  <div class="control has-icons-left has-icons-right">
-			    <input class="input is-danger" type="text" placeholder="Text input" value="">
-			    <span class="icon is-small is-left">
-			      <i class="fas fa-user"></i>
-			    </span>
-			    <span class="icon is-small is-right">
-			      <i class="fas fa-exclamation-triangle"></i>
-			    </span>
-			  </div>
-			  <p class="help is-danger"><translate data-lng="nameValidation"></translate></p>
+				<div class="field">
+				  <label class="label"><translate data-lng="name"></translate></label>
+				  <div class="control has-icons-left has-icons-right">
+				    <input class="input is-danger" type="text" placeholder="Text input" value="">
+				    <span class="icon is-small is-left">
+				      <i class="fas fa-user"></i>
+				    </span>
+				    <span class="icon is-small is-right">
+				      <i class="fas fa-exclamation-triangle"></i>
+				    </span>
+				  </div>
+				  <p class="help is-danger"><translate data-lng="nameValidation"></translate></p>
+				</div>
+
+				<div class="field">
+				  <label class="label"><translate data-lng="email"></translate></label>
+				  <div class="control has-icons-left has-icons-right">
+				    <input class="input is-danger" type="email" placeholder="Email input" value="">
+				    <span class="icon is-small is-left">
+				      <i class="fas fa-envelope"></i>
+				    </span>
+				    <span class="icon is-small is-right">
+				      <i class="fas fa-exclamation-triangle"></i>
+				    </span>
+				  </div>
+				  <p class="help is-danger"><translate data-lng="emailValidation"></p>
+				</div>
+
+
+				<div class="field">
+				  <label class="label"><translate data-lng="subject"></translate></label>
+				  <div class="columns">
+			  		<div class="column is-one-thirds">
+					  <div class="control">
+					    <label class="radio">
+					      <input type="radio" name="subject">
+					      <translate data-lng="question"></translate>
+					    </label>
+					  </div>
+					</div>
+			  		<div class="column is-one-thirds">
+					  <div class="control">
+					    <label class="radio">
+					      <input type="radio" name="subject">
+					      <translate data-lng="suggestion"></translate>
+					    </label>
+					  </div>
+					</div>
+				  	<div class="column is-one-thirds">
+					  <div class="control">					
+					    <label class="radio">
+					      <input type="radio" name="subject">
+					      <translate data-lng="otherSubject"></translate>
+					    </label>
+					  </div>
+					</div>
+				  </div>
+				</div>
+
+				<div class="field">
+				  <label class="label"><translate data-lng="message"></translate></label>
+				  <div class="control">
+				    <textarea class="textarea" placeholder="Textarea"></textarea>
+				  </div>
+				</div>
+
+				<div class="field is-grouped">
+				  <div class="control">
+				    <button class="button is-link"><translate data-lng="send"></translate></button>
+				  </div>
+				  <div class="control">
+				    <button class="button is-text"><translate data-lng="cancel"></translate></button>
+				  </div>
+				</div>
 			</div>
-
-			<div class="field">
-			  <label class="label"><translate data-lng="email"></translate></label>
-			  <div class="control has-icons-left has-icons-right">
-			    <input class="input is-danger" type="email" placeholder="Email input" value="">
-			    <span class="icon is-small is-left">
-			      <i class="fas fa-envelope"></i>
-			    </span>
-			    <span class="icon is-small is-right">
-			      <i class="fas fa-exclamation-triangle"></i>
-			    </span>
-			  </div>
-			  <p class="help is-danger"><translate data-lng="emailValidation"></p>
-			</div>
-
-
-			<div class="field">
-			  <label class="label"><translate data-lng="subject"></translate></label>
-			  <div class="control">
-			    <label class="radio">
-			      <input type="radio" name="subject">
-			      <translate data-lng="question"></translate>
-			    </label>
-			    <label class="radio">
-			      <input type="radio" name="subject">
-			      <translate data-lng="suggestion"></translate>
-			    </label>
-			    <label class="radio">
-			      <input type="radio" name="subject">
-			      <translate data-lng="otherSubject"></translate>
-			    </label>		    
-			  </div>
-			</div>
-
-			<div class="field">
-			  <label class="label"><translate data-lng="message"></translate></label>
-			  <div class="control">
-			    <textarea class="textarea" placeholder="Textarea"></textarea>
-			  </div>
-			</div>
-
-			<div class="field is-grouped">
-			  <div class="control">
-			    <button class="button is-link"><translate data-lng="send"></translate></button>
-			  </div>
-			  <div class="control">
-			    <button class="button is-text"><translate data-lng="cancel"></translate></button>
-			  </div>
-			</div>
-
 		</div>
 	</section>
 	<script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>

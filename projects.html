@@ -1,0 +1,181 @@
+<html>
+<head>
+	<title>Ivan Calderon Portfolio</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="./asset/js/translation.js"></script>
+	<script  src="./asset/js/functions.js"></script>
+</head>
+<body>
+	<nav class="navbar is-primary">
+	  <div class="navbar-brand">
+	    <a class="navbar-item" href="#">
+	      <img src="./asset/img/foto.jpg" alt="Iván Calderon" width="50" height="50">
+	    </a>
+	    <div class="navbar-burger burger" data-target="navbarExamplePrimaryExample">
+	      <span></span>
+	      <span></span>
+	      <span></span>
+	    </div>
+	  </div>
+
+	  <div id="navbarExamplePrimaryExample" class="navbar-menu">
+	    <div class="navbar-start">
+	      <a class="navbar-item" href="index.html">
+	        <translate data-lng="home"></translate>
+	      </a>
+	      <div class="navbar-item has-dropdown is-hoverable">
+	        <a class="navbar-link" href="#">
+	          <translate data-lng="styles"></translate>
+	        </a>
+	        <div class="navbar-dropdown is-boxed">
+	          <a class="navbar-item" href="#">
+	            Bulma
+	          </a>
+	          <a class="navbar-item" href="#">
+	            Bootstrap 3
+	          </a>
+	          <a class="navbar-item" href="#">
+	            Bootstrap 4
+	          </a>
+	          <hr class="navbar-divider">	          
+	          <a class="navbar-item" href="#">
+	            Materialize
+	          </a>
+	          <a class="navbar-item" href="#">
+	            Foundation
+	          </a>
+	          <a class="navbar-item" href="#">
+	            Sckeletor
+	          </a>
+	        </div>
+	      </div>
+	      <a class="navbar-item" href="#">
+	        <translate data-lng="cv"></translate>
+	      </a>
+	      <a class="navbar-item" href="#">
+	        <translate data-lng="projects"></translate>
+	      </a>
+	      <a class="navbar-item" href="#">
+	        <translate data-lng="codes"></translate>
+	      </a>
+	      <a class="navbar-item" href="#">
+	        <translate data-lng="news"></translate>
+	      </a>  
+	    </div>
+
+	    <div class="navbar-end">
+	      <div class="navbar-item">
+		      <div class="navbar-item has-dropdown is-hoverable">
+		        <a class="navbar-link" href="#">
+		          <translate data-lng="firstLanguage"></translate>
+		        </a>
+		        <div class="navbar-dropdown is-boxed">
+		          <a class="navbar-item" href="#" id="changeLanguage">
+		            <translate data-lng="secondLanguage"></translate>
+		          </a>
+		        </div>
+		      </div>	      	
+	      </div>
+	    </div>
+	  </div>
+	</nav> 
+	<section id="projects-list">
+		<nav class="panel">
+		  <p class="panel-heading">
+		    <translate data-lng="repositories"></translate>
+		  </p>
+		  <div class="panel-block">
+		    <p class="control has-icons-left">
+		      <input class="input is-small" type="text" placeholder="search">
+		      <span class="icon is-small is-left">
+		        <i class="fas fa-search"></i>
+		      </span>
+		    </p>
+		  </div>
+		  <p class="panel-tabs">
+		    <a class="is-active"><translate data-lng="all"></translate></a>
+		    <a>Angular</a>
+		    <a>React</a>
+		    <a>Vue</a>
+		    <a>Polymer</a>
+		    <a>PHP</a>
+		    <a>Javascript</a>
+		  </p>
+		  <a class="panel-block is-active" target="_blank" href="https://github.com/icalderoncaceres/angular-bulma">
+		    <span class="panel-icon" >
+		      <i class="fas fa-book"></i>
+		    </span>
+		    Angular-bulma
+		  </a>
+		  <a class="panel-block" target="_blank" href="https://github.com/icalderoncaceres/vue-bulma">
+		    <span class="panel-icon">
+		      <i class="fas fa-book"></i>
+		    </span>
+		    Vue-bulma
+		  </a>
+		  <a class="panel-block" target="_blank" href="https://github.com/icalderoncaceres/react-reflux">
+		    <span class="panel-icon">
+		      <i class="fas fa-book"></i>
+		    </span>
+		    React-reflux
+		  </a>
+		  <a class="panel-block" target="_blank" href="https://github.com/icalderoncaceres/polymer-admin">
+		    <span class="panel-icon">
+		      <i class="fas fa-book"></i>
+		    </span>
+		    Polymer-admin
+		  </a>
+		  <a class="panel-block" target="_blank" href="https://github.com/icalderoncaceres/react-redux-foundation">
+		    <span class="panel-icon">
+		      <i class="fas fa-book"></i>
+		    </span>
+		    React-redux-foundation
+		  </a>
+		  <a class="panel-block" target="_blank" href="https://github.com/icalderoncaceres/angular-redux-foundation">
+		    <span class="panel-icon">
+		      <i class="fas fa-book"></i>
+		    </span>
+		    Angular-redux-foundation
+		  </a>		  
+		  <a class="panel-block" target="_blank" href="https://github.com/icalderoncaceres/react-reflux-foundation">
+		    <span class="panel-icon">
+		      <i class="fas fa-book"></i>
+		    </span>
+		    React-reflux-foundation
+		  </a>
+		  <a class="panel-block" target="_blank" href="https://github.com/icalderoncaceres/java-course">
+		    <span class="panel-icon">
+		      <i class="fas fa-book"></i>
+		    </span>
+		    Java-course
+		  </a>
+		  <a class="panel-block" target="_blank" href="https://github.com/icalderoncaceres/orange-angular">
+		    <span class="panel-icon">
+		      <i class="fas fa-book"></i>
+		    </span>
+		    Orange-angular
+		  </a>
+		  <a class="panel-block" target="_blank" href="https://github.com/icalderoncaceres/english-games">
+		    <span class="panel-icon">
+		      <i class="fas fa-book"></i>
+		    </span>
+		    English-games
+		  </a>
+		  <a class="panel-block" target="_blank" href="https://github.com/icalderoncaceres/tdo">
+		    <span class="panel-icon">
+		      <i class="fas fa-book"></i>
+		    </span>
+		    TDO
+		  </a>		  
+		  <div class="panel-block">
+		    <button class="button is-link is-outlined is-fullwidth">
+		      reset all filters
+		    </button>
+		  </div>
+		</nav>
+	</section>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+</body>
+</html>
