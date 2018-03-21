@@ -28,8 +28,10 @@ var lang_obj={
 	message:{es:'Mensaje',en:'Message'},
 	send:{es:'Enviar',en:'Send'},
 	cancel:{es:'Cancelar',en:'Cancel'},
-	repositories:{es:'Repositorios',en:'repositories'},
-	all:{es:'Todos',en:'All'}
+	repositories:{es:'Repositorios',en:'Repositories'},
+	all:{es:'Todos',en:'All'},
+	portfolio:{es:'Portafolio',en:'portfolio'},
+	by:{es:'Por',en:'By'}
 }
 
 $(document).ready(function(){
