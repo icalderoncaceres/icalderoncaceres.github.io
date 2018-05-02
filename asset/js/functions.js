@@ -31,7 +31,8 @@ var lang_obj={
 	repositories:{es:'Repositorios',en:'Repositories'},
 	all:{es:'Todos',en:'All'},
 	portfolio:{es:'Portafolio',en:'portfolio'},
-	by:{es:'Por',en:'By'}
+	by:{es:'Por',en:'By'},
+	reset_filters:{es:'Resetear los filtros',en:'Reset filters'}
 }
 
 $(document).ready(function(){
