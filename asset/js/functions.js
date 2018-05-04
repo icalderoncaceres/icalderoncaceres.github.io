@@ -43,6 +43,25 @@ $(document).ready(function(){
 		lang=lang=="en"?"es":"en";
 		setLanguage(lang);
 	});
+
+	$(".projects-title>a").click(function(e){
+		e.preventDefault();
+		$(".is-active").removeClass("is-active");
+		$(this).addClass("is-active");
+		let options=$("#projects-list>nav>a.panel-block");
+		let keyMain=$(this).data("key");
+		options.each(function(index,value){
+			if($(this).data("keys").indexOf(keyMain)==-1){
+				if(!$(this).hasClass("is-hidden")){
+					$(this).addClass("is-hidden");
+				}
+			}else{
+				if($(this).hasClass("is-hidden")){
+					$(this).removeClass("is-hidden");
+				}				
+			}
+		});
+	});
 });
 
 function setLanguage(lang){
@@ -50,4 +69,8 @@ function setLanguage(lang){
 		let text=$(this).data("lng");
 		$(this).html(lang_obj[text][lang]);
 	});
+}
+
+function resetFilters(){
+	$(".projects-title>a").first().click();
 }
