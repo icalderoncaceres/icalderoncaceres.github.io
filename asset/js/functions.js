@@ -15,7 +15,7 @@ var lang_obj={
 		en:"Thank you very much for visiting this site, which has the purpose of sharing news, codes and information in general related to software development",
 	},
 	socialNetworks:{es:'Por favor visita mis redes sociales',en:'Please visit my social networks'},
-	contactus:{es:'Contactanos',en:'Contact us'},
+	contactus:{es:'Contactame',en:'Contact me'},
 	name:{es:'Nombre',en:'Name'},
 	nameValidation:{es:'Este nombre de no es válido',en:'This name is not valid'},
 	emailValidation:{es:'Este email no es válido',en:'This email is not valid'},
@@ -62,6 +62,11 @@ $(document).ready(function(){
 			}
 		});
 	});
+
+	$("#btn-send").click(function(e){
+		e.preventDefault();
+		alert("Enviar");
+	});
 });
 
 function setLanguage(lang){
@@ -73,4 +78,15 @@ function setLanguage(lang){
 
 function resetFilters(){
 	$(".projects-title>a").first().click();
+}
+
+function seeRepo(){
+	$.ajax({
+		url:"/portfolio/asset/readme/README.md",
+		type:"GET",
+		dataType:"HTML",
+		success:function(data){
+			$("#description-repo").html(data);
+		}
+	});
 }

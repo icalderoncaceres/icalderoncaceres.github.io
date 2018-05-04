@@ -89,51 +89,46 @@
 	      </h2>
 	    </div>
 	</section>
+	<!--
 	<section id="social-networks">
-		<div class="container is-desktop">
+		<div class="container is-mobile">
 		    <h1 class="title"><translate data-lng="socialNetworks"></translate></h1>
 		    <div class="columns is-mobile">
 		    	<div class="column">
 		    		<a href="#">
-			    		<figure class="image is-square">
+			    		<figure class="image is-128x128">
 	  						<img src="./asset/img/facebook.png">
-						</figure>
-					</a>
-				</div>
-		    	<div class="column">
+							</figure>
+						</a>
+					</div>
+			    <div class="column">
 		    		<a href="#">
-			    		<figure class="image is-square">
+			    		<figure class="image is-128x128">
 	  						<img src="./asset/img/youtube.png">
-						</figure>
-					</a>
-		    	</div>
-		    	<div class="column">
-		    		<a href="#">
-			    		<figure class="image is-square">
-	  						<img src="./asset/img/twitter.jpg">
-						</figure>
-					</a>
-		    	</div>
-		    	<div class="column">
+							</figure>
+						</a>
+			    </div>
+			    <div class="column">
 		    		<a href="https://www.linkedin.com/in/ivan-dario-calderon-developer" target="_blank">
-			    		<figure class="image is-square">
+			    		<figure class="image is-128x128">
 	  						<img src="./asset/img/linkedin.jpg">
-						</figure>
-					</a>
-		    	</div>		    	
-		   	</div>	      
+							</figure>
+						</a>
+					</div>
+		    </div>		    	
 		</div>
 	</section>
+-->
 	<section id="contact-form">
 		<div class="container">
 		<div class="columns is-desktop is-tablet">
-			<div class="column is-half is-offset-one-quarter">
+			<div class="column is-half is-offset-one-quarter" style="border:solid green 1px;margin-top:10px;">
 				<h1 class="title"><translate data-lng="contactus"></translate></h1>
 
 				<div class="field">
 				  <label class="label"><translate data-lng="name"></translate></label>
 				  <div class="control has-icons-left has-icons-right">
-				    <input class="input is-danger" type="text" placeholder="Text input" value="">
+				    <input class="input" type="text" placeholder="Text input" value="">
 				    <span class="icon is-small is-left">
 				      <i class="fas fa-user"></i>
 				    </span>
@@ -141,13 +136,13 @@
 				      <i class="fas fa-exclamation-triangle"></i>
 				    </span>
 				  </div>
-				  <p class="help is-danger"><translate data-lng="nameValidation"></translate></p>
+				  <p class="help is-danger is-hidden"><translate data-lng="nameValidation"></translate></p>
 				</div>
 
 				<div class="field">
 				  <label class="label"><translate data-lng="email"></translate></label>
 				  <div class="control has-icons-left has-icons-right">
-				    <input class="input is-danger" type="email" placeholder="Email input" value="">
+				    <input class="input" type="email" placeholder="Email input" value="">
 				    <span class="icon is-small is-left">
 				      <i class="fas fa-envelope"></i>
 				    </span>
@@ -155,7 +150,7 @@
 				      <i class="fas fa-exclamation-triangle"></i>
 				    </span>
 				  </div>
-				  <p class="help is-danger"><translate data-lng="emailValidation"></p>
+				  <p class="help is-danger is-hidden"><translate data-lng="emailValidation"></p>
 				</div>
 
 
@@ -198,10 +193,10 @@
 
 				<div class="field is-grouped">
 				  <div class="control">
-				    <button class="button is-link"><translate data-lng="send"></translate></button>
+				    <button id="btn-send" class="button is-link"><translate data-lng="send"></translate></button>
 				  </div>
 				  <div class="control">
-				    <button class="button is-text"><translate data-lng="cancel"></translate></button>
+				    <button class="button is-danger"><translate data-lng="cancel"></translate></button>
 				  </div>
 				</div>
 			</div>
