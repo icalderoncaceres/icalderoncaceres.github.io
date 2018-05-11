@@ -80,9 +80,10 @@ function resetFilters(){
 	$(".projects-title>a").first().click();
 }
 
-function seeRepo(){
+function seeRepo(event){
+	event.preventDefault();
 	$.ajax({
-		url:"/portfolio/asset/readme/README.md",
+		url:"https://github.com/icalderoncaceres/java-course#README.md",
 		type:"GET",
 		dataType:"HTML",
 		success:function(data){
