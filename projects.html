@@ -57,9 +57,6 @@
 	        <translate data-lng="projects"></translate>
 	      </a>
 	      <a class="navbar-item" href="#">
-	        <translate data-lng="codes"></translate>
-	      </a>
-	      <a class="navbar-item" href="#">
 	        <translate data-lng="news"></translate>
 	      </a>  
 	    </div>
@@ -81,19 +78,11 @@
 	  </div>
 	</nav> 
 	<div class="columns">
-			<section id="projects-list" class="column is-4 is-offset-1">
+			<section id="projects-list" class="column is-desktop-5 is-table-6 is-offset-1">
 				<nav class="panel">
 					<p class="panel-heading">
 						<translate data-lng="repositories"></translate>
 					</p>
-					<div class="panel-block">
-						<p class="control has-icons-left">
-							<input class="input is-small" type="text" placeholder="search">
-							<span class="icon is-small is-left">
-								<i class="fas fa-search"></i>
-							</span>
-						</p>
-					</div>
 					<p class="panel-tabs projects-title">
 						<a class="is-active" data-key=""><translate data-lng="all"></translate></a>
 						<a data-key="js">Javascript</a>
@@ -227,18 +216,12 @@
 						</span>
 						Subastas
 					</a>					
-					<a class="panel-block" data-keys="ja" target="_blank" href="https://github.com/icalderoncaceres/java-course">
+					<a class="panel-block" data-keys="ja" onclick="seeRepo(event,'java-course')">
 						<span class="panel-icon">
 							<i class="fas fa-book"></i>
 						</span>
 						Java-course
 					</a>				
-					<a class="panel-block" data-keys="ja" target="_blank" onclick="seeRepo(event)">
-						<span class="panel-icon">
-							<i class="fas fa-book"></i>
-						</span>
-						Java-course
-					</a>					
 					<a class="panel-block" data-keys="py" target="_blank" href="https://github.com/icalderoncaceres/python-course">
 						<span class="panel-icon">
 							<i class="fas fa-book"></i>
@@ -264,7 +247,7 @@
 					</div>					
 				</nav>
 			</section>
-			<section class="column is-one-third" id="description-repo">
+			<section class="column is-desktop-5 is-tablet-4" id="description-repo">
 					Descripcion
 			</section>
 	</div>
