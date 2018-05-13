@@ -81,7 +81,6 @@ function resetFilters(){
 }
 
 function seeRepo(event,repo){
-	event.preventDefault();
-
-	$("#description-repo").text(`../readme/en/${repo}.txt`);
+	event.preventDefault();	
+	$("#description-repo").load("asset/readme/en/java-course.txt");
 }
