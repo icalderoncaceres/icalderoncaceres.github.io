@@ -28,11 +28,15 @@ var lang_obj={
 	message:{es:'Mensaje',en:'Message'},
 	send:{es:'Enviar',en:'Send'},
 	cancel:{es:'Cancelar',en:'Cancel'},
+	repository:{es:'Repositorio',en:'Repository'},
 	repositories:{es:'Repositorios',en:'Repositories'},
 	all:{es:'Todos',en:'All'},
 	portfolio:{es:'Portafolio',en:'portfolio'},
 	by:{es:'Por',en:'By'},
-	reset_filters:{es:'Resetear los filtros',en:'Reset filters'}
+	reset_filters:{es:'Resetear los filtros',en:'Reset filters'},
+	go_repo:{es:'Ir repo',en:'Go repo'},
+	is_building:{es:'Este repositorio no tiene aún descripción, pronto sera colocado',en:'This repository does not have description yet, soon it will be put'},
+	formValidation:{es:'Por favor ingrese todos los campos requeridos',en:'Please enter all required fields'}
 }
 
 $(document).ready(function(){
@@ -65,7 +69,25 @@ $(document).ready(function(){
 
 	$("#btn-send").click(function(e){
 		e.preventDefault();
-		alert("Enviar");
+		let vacio=false;
+		$(".contact-field").each(function(index,value){
+			if($(this).val()==""){
+				if(!$(this).hasClass("is-danger"))
+					$(this).addClass("is-danger");
+				vacio=true;
+			}else{
+				if($(this).hasClass("is-danger"))
+					$(this).removeClass("is-danger");
+			}
+		});
+		if(vacio){
+			if($("#formValidation").hasClass("is-hidden"))
+				$("#formValidation").removeClass("is-hidden");
+			return;
+		}
+		if(!$("#formValidation").hasClass("is-hidden"))
+			$("#formValidation").addClass("is-hidden");
+		alert("Enviamos");
 	});
 });
 
@@ -82,5 +104,11 @@ function resetFilters(){
 
 function seeRepo(event,repo){
 	event.preventDefault();	
-	$("#description-repo").load("asset/readme/en/java-course.txt");
+	$("#projects-list .panel-block,.is-active").removeClass('is-active');
+	event.target.className="panel-block is-active";
+	$("#description-repo").load("asset/readme/readme.html",()=>{
+		$("div#readme .link-repository").attr("href",`https://github.com/icalderoncaceres/${repo}`);
+		$("div#readme #span-repository").text(`https://github.com/icalderoncaceres/${repo}`);
+		setLanguage(lang);
+	});
 }
