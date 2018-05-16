@@ -36,7 +36,13 @@ var lang_obj={
 	reset_filters:{es:'Resetear los filtros',en:'Reset filters'},
 	go_repo:{es:'Ir repo',en:'Go repo'},
 	is_building:{es:'Este repositorio no tiene aún descripción, pronto sera colocado',en:'This repository does not have description yet, soon it will be put'},
-	formValidation:{es:'Por favor ingrese todos los campos requeridos',en:'Please enter all required fields'}
+	formValidation:{es:'Por favor ingrese todos los campos requeridos',en:'Please enter all required fields'},
+	education:{es:'Educación',en:'Education'},
+	january:{es:'Enero',en:'January'},
+	april:{es:'Abril',en:'April'},
+	july:{es:'Julio',en:'July'},
+	tsu:{es:'Técnico Superior Universitario en Informática',en:'Senior University Technician in Computer Science'},
+	years:{es:'Años',en:'Years'}
 }
 
 $(document).ready(function(){
