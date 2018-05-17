@@ -70,15 +70,48 @@ var lang_obj={
 	},
 	projects:{es:'Proyectos',en:'Projects'},
 	references:{es:'Referncias',en:'References'},
-	interests:{es:'Actividades de Intereses',en:'Interests/Activities'},
+	interests:{es:'Actividades de Interes',en:'Interests/Activities'},
 	expectations:{es:'Expectativas',en:'Expectations'},
 	webDesign:{es:'Diseño web',en:'Web design'},
 	native:{es:'Nativo',en:'Native'},
 	and:{es:'y',en:'and'},
 	svn:{es:'Sistema de control de versiones',en:'Control Version System'},
 	mobileDevelopment:{es:'Desarrollo móvil',en:'Mobile development'},
-	databases:{es:'Bases de datos',en:'Data Base'}
-
+	databases:{es:'Bases de datos',en:'Data Base'},
+	environment:{es:'Entorno',en:'Environment'},
+	problemSolv:{es:'Resolución de problemas',en:'Problem solving'},
+	environmentDesc:{
+		es:'Actitud flexible y positiva ante los cambios. Durante los últimos 5 años estuve trabajando en varios proyectos internacionales y he estado estudiando en diferentes entornos.',
+		en:'Flexible and positive attitude to changes. During last 5 years was working on various international projects and have been studying in different environments.'
+	},
+	problemSolving:{
+		es:'Grandes habilidades analíticas, de resolución de problemas y de gestión de riesgos. Obtenido durante mis estudios y trabajos',
+		en:'Good analytical, problem solving and risk management skills. Gained during my studies and project work'
+	},
+	acalaration:{
+		es:'Los siguientes proyectos fueron o están siendo desarrollados por equipos de desarrollo a los cuales he tenido el placer de pertenecer, es decir, son proyectos en los que he participado mas no han sido desarrollados solamente por mi, por dicha razon no presento el código, si deseas ver código netamente mio, te invito a la sección de proyectos en este mismo sitio',
+		en:'The following projects were or are being developed by development teams to which I have had the pleasure of belonging, that is, they are projects in which I have participated but have not been developed solely by me, for this reason I do not present the code, you want to see my own code clearly, I invite you to the section of projects in this same site'
+	},
+	pengi:{
+		es:'Es una herramienta de comunicación en línea, donde los visitantes pueden comunicarse con un agente de atención al cliente, ventas o soporte técnico a través de una pequeña ventana flotante que se instala fácilmente en cualquier sitio web; tiene chat en vivo, video y llamada de voz. Además los agentes cuentan con herramientas como compartir pantalla, pizarra interactiva, co-navegación, entre otros.',
+		en:'Pengi is an online communication tool, in which visitors can communicate with a customer service, sales or technical support agent through a small floating window that is easily installed on any website. It has live chat, video and voice call. In addition, agents have tools such as screen sharing, interactive whiteboard and co-browsing, among others'
+	},
+	clipclap:{
+		es:'Con ClipClap puedes recibir pagos con tarjeta o en fectivo de forma muy sencilla, ya sea ingresando el monto manualmente o adicionando productos o servicios a la cuenta. Configura ya tu datafono ClipClap',
+		en:'With ClipClap you can receive payments with card or in a very simple way, either by entering the amount manually or by adding products or services to the account. Set up your ClipClap dataphone now'
+	},
+	aba:{
+		es:'El mejor hosting gratuito ABA.ae',
+		en:'The best free hosting ABA.ae'
+	},
+	apreciodepana:{
+		es:'El primer marketplace Venezolano',
+		en:'The first Venezuelan marketplace'
+	},
+	roanja:{
+		es:'El mejor servicio especializado, con los mejores profesionales a tu disposición para dar soporte a tu proyecto.',
+		en:'The best specialized service, with the best professionals at your disposal to support your project.'
+	}
 }
 
 $(document).ready(function(){
