@@ -71,7 +71,13 @@ var lang_obj={
 	projects:{es:'Proyectos',en:'Projects'},
 	references:{es:'Referncias',en:'References'},
 	interests:{es:'Actividades de Intereses',en:'Interests/Activities'},
-	expectations:{es:'Expectativas',en:'Expectations'}
+	expectations:{es:'Expectativas',en:'Expectations'},
+	webDesign:{es:'Diseño web',en:'Web design'},
+	native:{es:'Nativo',en:'Native'},
+	and:{es:'y',en:'and'},
+	svn:{es:'Sistema de control de versiones',en:'Control Version System'},
+	mobileDevelopment:{es:'Desarrollo móvil',en:'Mobile development'},
+	databases:{es:'Bases de datos',en:'Data Base'}
 
 }
 

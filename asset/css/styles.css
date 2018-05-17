@@ -8,6 +8,12 @@ body{
 	left:75%;
 }
 
+#specific-skills>.box>span.is-italic{
+	font-size:24px;
+	font-weight: bold;
+	text-decoration:underline;
+}
+
 @media (max-width:700px){
 	#cv-menu{
 		position: relative;
