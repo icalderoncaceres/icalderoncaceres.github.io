@@ -1,6 +1,7 @@
 var lang="en";
 //import lang_obj from '../lang/lang.js';
 var lang_obj={
+	personal_data:{es:'Datos Personales',en:'Personal Data'},
 	home:{es:"Inicio",en:"Home"},
 	styles:{es:"Estilos",en:"Styles"},
 	cv:{es:"Curriculum",en:"CV"},
@@ -39,10 +40,29 @@ var lang_obj={
 	formValidation:{es:'Por favor ingrese todos los campos requeridos',en:'Please enter all required fields'},
 	education:{es:'Educación',en:'Education'},
 	january:{es:'Enero',en:'January'},
+	february:{es:'Febrero',en:'February'},
+	march:{es:'Marzo',en:'March'},
 	april:{es:'Abril',en:'April'},
-	july:{es:'Julio',en:'July'},
+	may:{es:'Mayo',en:'May'},
+	june:{es:'Junio',en:'June'},
+	july:{es:'Julio',en:'July'},	
+	august:{es:'Agosto',en:'August'},
+	september:{es:'Septiembre',en:'September'},
+	october:{es:'Octubre',en:'October'},
+	november:{es:'Noviembre',en:'November'},
+	december:{es:'Diciembre',en:'December'},
+	actually:{es:'Actualmente',en:'Actually'},	
 	tsu:{es:'Técnico Superior Universitario en Informática',en:'Senior University Technician in Computer Science'},
-	years:{es:'Años',en:'Years'}
+	profesor:{es:'Profesor en Informática',en:'Computer Science Teacher'},
+	bussinessEng:{es:'Ingles de negocios',en:'Bussiness English'},
+	years:{es:'Años',en:'Years'},
+	year:{es:'Año',en:'Year'},
+	workExperience:{es:'Experiencia Laboral',en:'Work Experience'},
+	developer:{es:'Desarrollador',en:'Developer'},
+	manager:{es:'Administrador de personal',en:'Personal Managament'},
+	skills:{es:'Habilidades',en:'Skills'},
+	skillsSpec:{es:'Habilidades Especificas',en:'Specific Skills'},
+	skillsOther:{es:'Otras Habilidades',en:'Others Skills'}
 }
 
 $(document).ready(function(){

@@ -1,3 +1,15 @@
 body{
 	background-color:#fafafa;
 }
+
+#cv-menu{
+	position:fixed;
+	top:60%;
+	left:75%;
+}
+
+@media (max-width:700px){
+	#cv-menu{
+		position: relative;
+	}
+}
