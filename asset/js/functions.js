@@ -62,7 +62,17 @@ var lang_obj={
 	manager:{es:'Administrador de personal',en:'Personal Managament'},
 	skills:{es:'Habilidades',en:'Skills'},
 	skillsSpec:{es:'Habilidades Especificas',en:'Specific Skills'},
-	skillsOther:{es:'Otras Habilidades',en:'Others Skills'}
+	skillsOther:{es:'Otras Habilidades',en:'Others Skills'},
+	team:{es:'Equipo',en:'Team'},
+	teamSkill:{
+		es:'Buen compañero de equipo y altamente adaptable a los cambios. Trabajé en proyectos grandes donde era extremadamente importante el trabajo en equipo, para asignar tiempo y roles',
+		en:'Good team player and highly adaptable to changes. Worked on large projects where was extremely important a good team playing, to allocate time and roles'		
+	},
+	projects:{es:'Proyectos',en:'Projects'},
+	references:{es:'Referncias',en:'References'},
+	interests:{es:'Actividades de Intereses',en:'Interests/Activities'},
+	expectations:{es:'Expectativas',en:'Expectations'}
+
 }
 
 $(document).ready(function(){
