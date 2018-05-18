@@ -111,7 +111,23 @@ var lang_obj={
 	roanja:{
 		es:'El mejor servicio especializado, con los mejores profesionales a tu disposición para dar soporte a tu proyecto.',
 		en:'The best specialized service, with the best professionals at your disposal to support your project.'
-	}
+	},
+	technologies:{es:'Tecnológicas',en:'Thecnologies'},
+	economies:{es:'Económicas',en:'Economies'},
+	sporties:{es:'Deportivas',en:'Sporties'},
+	technologiesDesc:{
+		es:'Disfruto de estar al día de las noticias con TI y ciencia, en particular en desarrollo web y móvil',
+		en:'Enjoy  keeping up to date news with IT and science, in particular in web and mobile development'
+	},
+	economiesDesc:{
+		es:'Disfruto trabajando en tareas lógicas y económicas. Interesado en estadísticas, economía, incluidos indicadores económicos, acciones reales, mercados inmobiliarios, cuestiones de empleo.',
+  		en:'Enjoy working on logical, economical tasks. Interested in statistics, economics including economic indicators, real stocks, property markets, employment issues.'
+	},
+	sportiesDesc:{
+		es:'Disfruto de actividades deportivas al aire libre como caminar, trotar, montar bicicleta y jugar futbol, ademas soy un apasionado del ajedrez',
+		en:'I enjoy outdoor sports activities such as walking, jogging, cycling and playing soccer, I am also passionate about chess'
+	},
+	expectationsDesc:{es:'Expectativas',en:'Expectations'}
 }
 
 $(document).ready(function(){
