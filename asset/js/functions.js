@@ -80,6 +80,11 @@ var lang_obj={
 	databases:{es:'Bases de datos',en:'Data Base'},
 	environment:{es:'Entorno',en:'Environment'},
 	problemSolv:{es:'Resolución de problemas',en:'Problem solving'},
+	language:{es:'Idiomas',en:'Languages'},
+	languageDesc:{
+		es:'Español nativo, Ingles conversacional y escrito, Portugues y Frances Básico',
+		en:'Native Spanish, conversational and written English, Portuguese and Basic French'
+	},
 	environmentDesc:{
 		es:'Actitud flexible y positiva ante los cambios. Durante los últimos 5 años estuve trabajando en varios proyectos internacionales y he estado estudiando en diferentes entornos.',
 		en:'Flexible and positive attitude to changes. During last 5 years was working on various international projects and have been studying in different environments.'
