@@ -4,12 +4,16 @@ body{
 
 #cv-menu{
 	position:fixed;
-	top:60%;
+	top:20%;
 	left:75%;
 }
 
 div.box{
 	text-align: justify;
+}
+
+.bd-category-list li.is-active{
+	background-color: #00d1b2;
 }
 
 .box span.is-italic{
@@ -18,6 +22,6 @@ div.box{
 
 @media (max-width:700px){
 	#cv-menu{
-		position: relative;
+		display:none;
 	}
 }

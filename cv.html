@@ -83,31 +83,23 @@
 	<section id="cv-section" name="cv-section" class="container has-text-centered" style="padding-top: 10px;">
 		<div class="columns is-mobile">
 			<div class="column is-12">
-				<img src="https://bulma.io/images/placeholders/256x256.png">
+				<img src="./asset/img/foto.jpg" width=256 height=auto />
 			</div>
 		</div>
 		<div class="columns is-mobile">
-			<div class="column">
+			<div class="column is-full-width">
 				<h2 class="title has-text-centered">Ivan Dario Calderon Caceres</h2>
-			</div>
-		</div>
-		<div class="columns is-mobile">
-			<div class="column">
 				<address>Casa 112 A-53,Apto. 201, Carrera 112, Suba Lombardia, Bogota</address>
-			</div>
-		</div>
-		<div class="columns is-mobile">		
-			<div class="column">
 				<a href="mailto:ivandario2010@gmail.com">
 					<span>ivandario2010@gmail.com</span>
 				</a><span> / +57 311 736 4378</span>
-				<hr />
+
 			</div>
 		</div>
 	</section>
 	<div class="container">
 		<div class="columns">
-			<div id="main-content" class="column is-three-quarters">
+			<div id="main-content" class="column is-three-quarters is-offset-1">
 				<section id="education-section" name="education-section">
 					<h1 class="title"><translate data-lng="education"></translate></h1>
 					<hr />
@@ -299,7 +291,13 @@
 					<h1 class="title"><translate data-lng="projects"></translate></h1>
 					<div class="notification is-italic has-text-justified">
 						<strong>
-						<span class="is-italic"><translate data-lng="acalaration"></translate> <a href="projects.html" target="_blank"><translate data-lng="projects"></translate></a></strong>
+							<span class="is-italic">
+								<translate data-lng="acalaration"></translate> 
+								<a href="projects.html" target="_blank">
+									<translate data-lng="projects"></translate>
+								</a>
+							</span>
+						</strong>
 					</div>
 					<hr />
 					<!--Project 1-->
@@ -376,43 +374,57 @@
 					</div>
 				</section>						
 			</div>
-			<section class="column" id="cv-menu">
+			<section class="column is-offset-1" id="cv-menu">
 				<ul class="bd-category-list">                  
 					<li class="is-active">
 						<a href="#cv-section">
+							<i class="fas fa-user-circle"></i>
 							<translate data-lng="personal_data"></translate>
 						</a>
-					</li>							
+					</li>
+					<li class="navbar-divider"></li>
 					<li>
 						<a href="#education-section">
+							<i class="fas fa-graduation-cap"></i>
 							<translate data-lng="education"></translate>
 						</a>
-					</li>												
+					</li>
+					<li class="navbar-divider"></li>
 					<li>
 						<a href="#work-experience">
+							<i class="fas fa-briefcase"></i>
 							<translate data-lng="workExperience"></translate>
 						</a>
-					</li>													
+					</li>
+					<li class="navbar-divider"></li>
 					<li>
 						<a href="#specific-skills">
+							<i class="fas fa-list-ol"></i>
 							<translate data-lng="skillsSpec"></translate>
 						</a>
 					</li>
+					<li class="navbar-divider"></li>
 					<li>
 						<a href="#others-skills">
+							<i class="fas fa-list-ul"></i>
 							<translate data-lng="skillsOther"></translate>
 						</a>
 					</li>
+					<li class="navbar-divider"></li>
 					<li>
 						<a href="#projects">
+							<i class="fas fa-project-diagram"></i>
 							<translate data-lng="projects"></translate>
 						</a>
 					</li>
+					<li class="navbar-divider"></li>
 					<li>
 						<a href="#interests">
+							<i class="fas fa-search"></i>
 							<translate data-lng="interests"></translate>
 						</a>
 					</li>
+					<li class="navbar-divider"></li>
 							<!--
 							<li>
 								<a href="#references">
@@ -420,35 +432,39 @@
 								</a>
 							</li>
 						-->
-						<li>
-							<a href="#expectations">
-								<translate data-lng="expectations"></translate>
-							</a>
-						</li>							
-					</ul>
-				</section>
-			</div>
+					<li>
+						<a href="#expectations">
+							<i class="fas fa-external-link-square-alt"></i>
+							<translate data-lng="expectations"></translate>
+						</a>
+					</li>
+			</section>			
 		</div>	
 		<footer class="footer">
 			<div class="container">
 				<div class="content has-text-centered">
-					<p>
-						<strong><translate data-lng="portfolio"></translate></strong> <translate data-lng="by"></translate> <a href="https://jgthms.com">Iván Calderon</a>. 
+					<p>						
+						<strong>
+							<translate data-lng="portfolio"></translate>
+						</strong> 
+						<translate data-lng="by"></translate> 
 						<a href="mailto:ivandario2010@gmail.com">ivandario2010@gmail.com</a>
-
 					</p>
-				</div>
-			</div>
-		</footer>		
-		<script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
-		<script type='text/javascript'>(function(b, o, i, e, r) { 
-			b.wO = { 
-			t: '$2y$10$9wVhQmn5H2yeGXdO6UkKU.2hD/D8V5xlQICmad3HAHRa.Aqxntmee' 
+		</footer>
+</div>
+	<script
+	 defer src="https://use.fontawesome.com/rele
+		ases/v5.0.
+		0/js/all.js"></script>
+	<script type='
+		 o, i, ,{
+				.wO = { 
+		t: '$2y$10$9wVhQmn5H2yeGXdO6UkKU.2hD/D8V5xlQICmad3HAHRa.Aqxntmee' 
 			}; e = o.createElement(i); 
 			r = o.getElementsByTagName(i)[0]; 
 			e.src = 'https://pengi.co:3001/js/widget/script.js'; 
 			r.parentNode.insertBefore(e, r); 
 			}(window, document, 'script')); 
-		</script>					
-	</body>
+	</script>
+</body>
 </html>
