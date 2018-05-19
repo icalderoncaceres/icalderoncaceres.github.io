@@ -186,7 +186,7 @@ $(document).ready(function(){
 		}
 		if(!$("#formValidation").hasClass("is-hidden"))
 			$("#formValidation").addClass("is-hidden");
-		alert("Enviamos");
+
 	});
 });
 
