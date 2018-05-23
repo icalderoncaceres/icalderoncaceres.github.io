@@ -186,6 +186,24 @@ $(document).ready(function(){
 		}
 		if(!$("#formValidation").hasClass("is-hidden"))
 			$("#formValidation").addClass("is-hidden");
+		let obj={
+			name:$("#txt-name").val(),
+			email:$("#txt-email").val(),
+			type:1,
+			message:$("#txt-message").val()
+		};
+		$.ajax({
+			url:"http://calzadoedever.com/controllers/portfolio.php",
+			data:{method:'saveMessage',name:obj.name,email:obj.email,type:obj.type,message:obj.message},
+			type:'POST',
+			dataType:'json',
+			success:function(data){
+				alert("Thank you very for write me, i will response you as soon as posible");
+			},
+			error:function(xhr){
+				alert("Sorry, in this moment it is not posible to send your message");
+			}
+		});
 
 	});
 });
