@@ -11,12 +11,14 @@ $(document).ready(function(){
 			$("#cv-menu li:nth-child(7)").addClass("is-active");
 		}else if($(document).scrollTop()<$("#projects").position().top){
 			$("#cv-menu li:nth-child(9)").addClass("is-active");
+		}else if($(document).scrollTop()<$("#courses").position().top){
+			$("#cv-menu li:nth-child(11)").addClass("is-active");			
 		}else if($(document).scrollTop()<$("#interests").position().top){
-			$("#cv-menu li:nth-child(11)").addClass("is-active");
-		}else if($(document).scrollTop()<$("#expectations").position().top){
 			$("#cv-menu li:nth-child(13)").addClass("is-active");
-		}else{
+		}else if($(document).scrollTop()<$("#expectations").position().top){
 			$("#cv-menu li:nth-child(15)").addClass("is-active");
+		}else{
+			$("#cv-menu li:nth-child(17)").addClass("is-active");
 		}
 	});
 });
