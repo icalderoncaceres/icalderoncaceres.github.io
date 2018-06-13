@@ -55,6 +55,8 @@ var lang_obj={
 	tsu:{es:'Técnico Superior Universitario en Informática',en:'Senior University Technician in Computer Science'},
 	profesor:{es:'Profesor en Informática',en:'Computer Science Teacher'},
 	bussinessEng:{es:'Ingles de negocios',en:'Bussiness English'},
+	month:{es:'Mes',en:'Month'},
+	months:{es:'Meses',en:'Months'},
 	years:{es:'Años',en:'Years'},
 	year:{es:'Año',en:'Year'},
 	workExperience:{es:'Experiencia Laboral',en:'Work Experience'},
@@ -137,7 +139,12 @@ var lang_obj={
 		en:'Fifteen years ago I graduated as a software developer in Venezuela, I was one of those students whose colleagues regularly asked for help, I was very passionate about the software world, then I started working in public administration where for a few years I worked hard automating the processes, however, after some time I was acquiring administrative responsibilities that kept me from editing the source code of the applications until some point left the development, in 2013 I was presented with the opportunity to travel to Dublin Ireland and there I relived the passion for the world of technology and especially for software development, however, I found that it was a bit rusty and outdated, which led me to work very hard to resume my profession, nowadays after 5 years of work and updating I feel very passionate and happy to be a software developer again and my wish is to be guir grow as a developer and participate in important projects and belong to important development teams where I can contribute and learn from my colleagues, I have no problem moving to any place in the world where I can continue to grow and be part of important projects, I do not want to separate myself from this profession that I am passionate about'
 	},
 	ireland:{es:'Irlanda',en:'Ireland'},	
-	courses:{es:'Cursos',en:'Courses'}
+	courses:{es:'Cursos',en:'Courses'},
+	downloadCV:{es:'Descargar hoja de vida',en:'Download CV'},
+	javaUdemy:{es:'Aprende a programar con JAVA',en:'Learn to programming with JAVA'},
+	remote:{es:'Remoto',en:'Remote'},
+	basicAvanced:{es:'Visual basic avanzado',en:'Advance Visual Basic'},
+	foxAvanced:{es:'Visual fox pro avanzado',en:'Advance Visual fox pro'}
 }
 
 $(document).ready(function(){
