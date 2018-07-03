@@ -144,7 +144,10 @@ var lang_obj={
 	javaUdemy:{es:'Aprende a programar con JAVA',en:'Learn to programming with JAVA'},
 	remote:{es:'Remoto',en:'Remote'},
 	basicAvanced:{es:'Visual basic avanzado',en:'Advance Visual Basic'},
-	foxAvanced:{es:'Visual fox pro avanzado',en:'Advance Visual fox pro'}
+	foxAvanced:{es:'Visual fox pro avanzado',en:'Advance Visual fox pro'},
+	cloudComputing:{es:'Computación en la nube',en:'Cloud computing'},
+	blockChain:{es:'BlockChain',en:'BlockChain'}
+
 }
 
 $(document).ready(function(){
