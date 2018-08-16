@@ -146,7 +146,8 @@ var lang_obj={
 	basicAvanced:{es:'Visual basic avanzado',en:'Advance Visual Basic'},
 	foxAvanced:{es:'Visual fox pro avanzado',en:'Advance Visual fox pro'},
 	cloudComputing:{es:'Computación en la nube',en:'Cloud computing'},
-	blockChain:{es:'BlockChain',en:'BlockChain'}
+	blockChain:{es:'BlockChain',en:'BlockChain'},
+	usePengi:{es:'Para comunicarte conmigo, te invito a utilizar PENGI LIVE, el cuál lo encontraras en la parte inferior derecha, si no puedo contestar deja un mensaje y pronto te escribire',en:'To communicate with me, I invite you to use PENGI LIVE, which you will find in the lower right, if I can not answer, leave a message and I will write you soon'}
 
 }
 
