@@ -142,6 +142,7 @@ var lang_obj={
 	courses:{es:'Cursos',en:'Courses'},
 	downloadCV:{es:'Descargar hoja de vida',en:'Download CV'},
 	javaUdemy:{es:'Aprende a programar con JAVA',en:'Learn to programming with JAVA'},
+	blockChainUdemy:{es:'Desarrollador blockchain',en:'Blockchain developer'},
 	remote:{es:'Remoto',en:'Remote'},
 	basicAvanced:{es:'Visual basic avanzado',en:'Advance Visual Basic'},
 	foxAvanced:{es:'Visual fox pro avanzado',en:'Advance Visual fox pro'},
