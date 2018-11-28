@@ -85,15 +85,19 @@ r.parentNode.insertBefore(e, r);
 		let conditions = document.querySelector("#conditions");
 		let channel = document.querySelector(".js-btn-canal");
 		let btn_start = document.querySelector("#input_channel_get_in");		
-		for(let i = 0;i < count;i++){			
-			email.value=randomEmail();
-			
+		var i = 0;
+		var intervalo = setInterval(()=>{
+			console.log("Petición número<<<<<<<<<",i);
+			email.value=randomEmail();			
 			channel.click();
 			if(i == 0)
 				conditions.click();
-
 			btn_start.click();
-		}
+
+			i++;
+			if(i == count)
+				clearInterval(intervalo);
+		},300);
 		
 	}
 
