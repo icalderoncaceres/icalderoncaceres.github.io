@@ -82,16 +82,16 @@ r.parentNode.insertBefore(e, r);
 	function makePeticiones(){
 		let count = document.querySelector("#txt-peticiones").value;
 		let email = document.querySelector(".widgetFields");
-		for(let i = 0;i < count;i++){
+		let conditions = document.querySelector("#conditions");
+		let channel = document.querySelector(".js-btn-canal");
+		let btn_start = document.querySelector("#input_channel_get_in");		
+		for(let i = 0;i < count;i++){			
 			email.value=randomEmail();
 			
-			let channel = document.querySelector(".js-btn-canal");
 			channel.click();
 			if(i == 0)
-				let conditions = document.querySelector("#conditions");
 				conditions.click();
 
-			let btn_start = document.querySelector("#input_channel_get_in");
 			btn_start.click();
 		}
 		
