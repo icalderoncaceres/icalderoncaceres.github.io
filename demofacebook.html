@@ -8,12 +8,19 @@
 			height: 2000px;
 			border: 1px solid blue;
 		}
+		#container-peticiones{
+			padding:20px 0px 0px 20px;
+		}
 	</style>
 </head>
 <body>
 	<div id="container">
 		<h1>TITULO</h1>
 		<hr/>
+		<div id="container-peticiones">
+			<input placeholder="Cantidad de peticiones" id="txt-peticiones" value="3" type="number" /><br/><br/>
+			<button id="btn-peticiones">Hacer perticiones</button>
+		</div>
 		<h1>Subtitulo</h1>
 		<h1>Subtitulo</h1>
 		<h1>Subtitulo</h1>
@@ -66,6 +73,16 @@ r = o.getElementsByTagName(i)[0];
 e.src = 'https://pg02.pengi.co:3001/js/widget/script.js'; 
 r.parentNode.insertBefore(e, r); 
 }(window, document, 'script')); 
+</script>
+
+<script>
+	let btn = document.querySelector("#btn-peticiones");
+	btn.addEventListener('click',makePeticiones);
+
+	function makePeticiones(){
+		let count = document.querySelector("#txt-peticiones").value;
+
+	}
 </script>
 
 </body>
