@@ -88,12 +88,15 @@ r.parentNode.insertBefore(e, r);
 
 	function makePeticiones(){
 		let count = document.querySelector("#txt-peticiones").value;
-		let email = document.querySelector(".widgetFields");
+		let email = document.querySelector("#pw_email");
+		let name = document.querySelector("#pw_name");
 		let btn_start = document.querySelector("#input_channel_get_in");		
 		var i = 0;
 		var intervalo = setInterval(()=>{
 			console.log("Petición número<<<<<<<<<",i,"<<<email<<<<<<",email);
-			email.value=randomEmail();			
+			let values = randomValues();
+			email.value = values[0];
+			name.value = values[1];
 			btn_start.click();
 
 			i++;
@@ -113,12 +116,14 @@ r.parentNode.insertBefore(e, r);
 		});
 	}
 
-	function randomEmail(){
+	function randomValues(){
 		let servers = ["gmail.com","yahoo.com","hotmail.com","outlook.es","yahoo.es","keos.co","pengi.co","gmail.co","microsoft.com","lotus.com","comcast.net","gmail.co","yahoo.co","comcast.com","gmail.es","microsoft.es","microsoft.co","outlook.com","outlook.es"];
 		let names = ["edwin","johana","nycoll","nicolas","michael","fernando","brayan","julieth","klaus","andrea","daniela","julio","daniel","ivan","andres","juan","pedro","maria","jorge","esteban","carlos","martha","sofia","lopez","contreras","calderon","suares","zurima","leydi","katty","yamileth","humberto"];
 
-		let email = names[Math.floor(Math.random() * names.length)] + "@" + servers[Math.floor(Math.random() * servers.length)];
-		return email;
+		let server=Math.floor(Math.random() * servers.length);
+		let name = Math.floor(Math.random() * names.length);
+		let email = names[name] + "@" + servers[server];
+		return [email,name];
 	}
 </script>
 
