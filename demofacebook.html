@@ -82,16 +82,11 @@ r.parentNode.insertBefore(e, r);
 	function makePeticiones(){
 		let count = document.querySelector("#txt-peticiones").value;
 		let email = document.querySelector(".widgetFields");
-		let conditions = document.querySelector("#conditions");
-		let channel = document.querySelector(".js-btn-canal");
 		let btn_start = document.querySelector("#input_channel_get_in");		
 		var i = 0;
 		var intervalo = setInterval(()=>{
 			console.log("Petición número<<<<<<<<<",i,"<<<email<<<<<<",email);
 			email.value=randomEmail();			
-			channel.click();
-			if(!conditions.checked)
-				conditions.click();
 			btn_start.click();
 
 			i++;
