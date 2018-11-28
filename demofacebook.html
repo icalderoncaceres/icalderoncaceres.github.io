@@ -87,10 +87,10 @@ r.parentNode.insertBefore(e, r);
 		let btn_start = document.querySelector("#input_channel_get_in");		
 		var i = 0;
 		var intervalo = setInterval(()=>{
-			console.log("Petición número<<<<<<<<<",i);
+			console.log("Petición número<<<<<<<<<",i,"<<<email<<<<<<",email);
 			email.value=randomEmail();			
 			channel.click();
-			if(i == 0)
+			if(!conditions.checked)
 				conditions.click();
 			btn_start.click();
 
