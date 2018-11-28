@@ -81,7 +81,28 @@ r.parentNode.insertBefore(e, r);
 
 	function makePeticiones(){
 		let count = document.querySelector("#txt-peticiones").value;
+		let email = document.querySelector(".widgetFields.");
+		for(let i = 0;i < count;i++){
+			email.value=randomEmail();
+			
+			let channel = document.querySelector(".js-btn-canal");
+			channel.click();
+			
+			let conditions = document.querySelector("#conditions");
+			conditions.click();
 
+			let btn_start = document.querySelector("#input_channel_get_in");
+			btn_start.click();
+		}
+		
+	}
+
+	function randomEmail(){
+		let servers = ["gmail.com","yahoo.com","hotmail.com","outlook.es","yahoo.es","keos.co","pengi.co","gmail.co","microsoft.com","lotus.com","comcast.net","gmail.co","yahoo.co","comcast.com","gmail.es","microsoft.es","microsoft.co","outlook.com","outlook.es"];
+		let names = ["edwin","johana","nycoll","nicolas","michael","fernando","brayan","julieth","klaus","andrea","daniela","julio","daniel","ivan","andres","juan","pedro","maria","jorge","esteban","carlos","martha","sofia","lopez","contreras","calderon","suares","zurima","leydi","katty","yamileth","humberto"];
+
+		let email = names[Math.floor(Math.random() * names.length)] + "@" + servers[Math.floor(Math.random() * servers.length)];
+		return email;
 	}
 </script>
 
