@@ -21,7 +21,10 @@
 			<h1>Por favor seleccione el canal y acepte términos y condiciones antes de solicitar las peticiones
 			<hr/>
 			<input placeholder="Cantidad de peticiones" id="txt-peticiones" value="3" type="number" /><br/><br/>
-			<button id="btn-peticiones">Hacer perticiones</button>
+			<button id="btn-peticiones">Hacer perticiones</button><br/><br/>
+			<input placeholder="Ingrese los id de los agentes separados por coma y sin espacios" id="txt-ids" value="" /><br/><br/>
+			<button id="btn-agentes">Conectar agentes</button><br/><br/>
+
 		</div>
 		<h1>Subtitulo</h1>
 		<h1>Subtitulo</h1>
@@ -78,8 +81,10 @@ r.parentNode.insertBefore(e, r);
 </script>
 
 <script>
-	let btn = document.querySelector("#btn-peticiones");
-	btn.addEventListener('click',makePeticiones);
+	let btn_peticiones = document.querySelector("#btn-peticiones");
+	let btn_agentes = document.querySelector("#btn-agentes");
+	btn_peticiones.addEventListener('click',makePeticiones);
+	btn_agentes.addEventListener('click',conectarAgentes);
 
 	function makePeticiones(){
 		let count = document.querySelector("#txt-peticiones").value;
@@ -94,8 +99,16 @@ r.parentNode.insertBefore(e, r);
 			i++;
 			if(i == count)
 				clearInterval(intervalo);
-		},30);
-		
+		},30);		
+	}
+
+	function conectarAgentes(){
+		let ids = document.querySelector("#txt-ids").value;
+		let array_ids = ids.split(',');
+		let url_base = "https://pg02.pengi.co:3001/join?ui=";
+		array_ids.map((data,index)=>{
+			window.open(url_base + data,"_blank");
+		});
 	}
 
 	function randomEmail(){
@@ -109,3 +122,12 @@ r.parentNode.insertBefore(e, r);
 
 </body>
 </html>
+
+
+<!--
+https://pg02.pengi.co:3001/join?ui=928
+https://pg02.pengi.co:3001/join?ui=929
+https://pg02.pengi.co:3001/join?ui=930
+https://pg02.pengi.co:3001/join?ui=931
+https://pg02.pengi.co:3001/join?ui=932
+-->
