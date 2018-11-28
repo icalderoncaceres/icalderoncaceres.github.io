@@ -107,7 +107,7 @@ r.parentNode.insertBefore(e, r);
 		let array_ids = ids.split(',');
 		let url_base = "https://pg02.pengi.co:3001/join?ui=";
 		array_ids.map((data,index)=>{
-			settimeout(()=>{
+			setTimeout(()=>{
 				window.open(url_base + data,"_blank");
 			},200);			
 		});
