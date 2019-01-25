@@ -104,8 +104,8 @@ var lang_obj={
 		en:'Pengi is an online communication tool, in which visitors can communicate with a customer service, sales or technical support agent through a small floating window that is easily installed on any website. It has live chat, video and voice call. In addition, agents have tools such as screen sharing, interactive whiteboard and co-browsing, among others'
 	},
 	clipclap:{
-		es:'Con ClipClap puedes recibir pagos con tarjeta o en fectivo de forma muy sencilla, ya sea ingresando el monto manualmente o adicionando productos o servicios a la cuenta. Configura ya tu datafono ClipClap',
-		en:'With ClipClap you can receive payments with card or in a very simple way, either by entering the amount manually or by adding products or services to the account. Set up your ClipClap dataphone now'
+		es:'Con PayRabbit puedes recibir pagos con tarjeta o en fectivo de forma muy sencilla, ya sea ingresando el monto manualmente o adicionando productos o servicios a la cuenta. Configura ya tu datafono PayRabbit',
+		en:'With PayRabbit you can receive payments with card or in a very simple way, either by entering the amount manually or by adding products or services to the account. Set up your PayRabbit dataphone now'
 	},
 	aba:{
 		es:'El mejor hosting gratuito ABA.ae',
