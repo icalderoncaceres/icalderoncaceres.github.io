@@ -9,19 +9,19 @@ class ProductSizes extends React.Component{
 	render(){
 		let sizes = this.props.sizes.map((data,index)=>{
 			return(
-                <li className="steps-segment" key={"steps-" + index}>
-                    <span className="steps-marker">
+               <div className="column" key={index}>
+               		<div className=" container-sizes">
 						{data.size}
-                    </span>
-                </li>
+					</div>
+                </div>
 			);
 		});
 
 		return(<div>
 			<h2 className="opacity bold">TALLE</h2>
-				<ul className="steps is-none">
+				<div className="columns">
 					{sizes}
-				</ul>
+				</div>
 			</div>
 		);
 	}

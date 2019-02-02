@@ -314,7 +314,7 @@ from equipos a where a.id_equipos IN (select fk_equipo_visitante from partidos);
 					<li>Descargar la carpeta</li>
 					<li>Descomprimirla</li>
 					<li>Dentro de una terminal ubicarse en el directorio</li>
-					<li>Ejecutar el comando: &nbsp; npm install && npm start</li>
+					<li>Ejecutar el comando: &nbsp; npm install && npm run dev</li>
 					<li>Dirigirse al navegador y copiar la URL: http://127.0.0.1:3100</li>
 				</ol>
 				<note>
