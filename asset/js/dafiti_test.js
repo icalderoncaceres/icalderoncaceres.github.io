@@ -309,7 +309,7 @@ from equipos a where a.id_equipos IN (select fk_equipo_visitante from partidos);
 
 			<div class="content">
 				<h1>Simular pagina de producto utilizando React</h1>
-				<p>Por favor descargar el archivo .zip <a href="/asset/dafiti/simple_dafiti_page.zip">aquí</a> y sigues las instrucciones</p>
+				<p>Por favor descargar el archivo .zip <a href="/asset/dafiti/simple_dafiti_page.zip" style="color:blue !important;text-decoration:underline !important;">aquí</a> y sigues las instrucciones</p>
 				<ol>
 					<li>Descargar la carpeta</li>
 					<li>Descomprimirla</li>
