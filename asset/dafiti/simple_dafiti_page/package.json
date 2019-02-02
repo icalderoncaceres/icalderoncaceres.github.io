@@ -1,0 +1,73 @@
+{
+  "name": "dafiti_front",
+  "version": "0.0.1",
+  "description": "Dafiti",
+  "main": "server.js",
+  "scripts": {
+    "prod": "NODE_ENV=production webpack && gulp && pm2 delete super_admin_front && pm2 start server.js --name super_admin_front",
+    "stg": "NODE_ENV=production webpack && gulp && pm2 delete super_admin_front && pm2 start server.js --name super_admin_front",
+    "start": "NODE_ENV=production webpack && gulp && node server.js",
+    "build": "NODE_ENV=production webpack && gulp",
+    "dev": "webpack && gulp && node server.js",
+    "watch": "webpack --watch"
+  },
+  "dependencies": {
+    "axios": "^0.17.1",
+    "bulma": "^0.6.2",
+    "express": "^4.16.2",
+    "forever": "^0.15.3",
+    "fs": "^0.0.1-security",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-less": "^3.4.0",
+    "gulp-minify": "^2.1.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace-task": "^0.11.0",
+    "highcharts": "^6.0.7",
+    "history": "^4.7.2",
+    "http": "0.0.0",
+    "https": "^1.0.0",
+    "less-plugin-clean-css": "^1.5.1",
+    "merge-stream": "^1.0.1",
+    "moment": "^2.22.1",
+    "path": "^0.12.7",
+    "react": "^16.3.2",
+    "react-cookie": "^2.1.2",
+    "react-dates": "^16.6.1",
+    "react-dom": "^16.3.2",
+    "react-loading": "^2.0.1",
+    "react-redux": "^5.0.6",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-router-redux": "^5.0.0-alpha.9",
+    "redux": "^3.7.2",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2017": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "css-loader": "^2.0.0",
+    "style-loader": "^0.23.1",
+    "uglifyjs-webpack-plugin": "^1.1.6",
+    "webpack": "^3.10.0",
+    "webpack-cli": "^3.1.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "dafiti"
+  ],
+  "author": "Ivan Calderon / Dafiti",
+  "license": "MIT licensed",
+  "homepage": ""
+}
