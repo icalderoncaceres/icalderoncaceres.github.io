@@ -8,17 +8,29 @@ $(document).ready(function(){
 			alert("Lo siento, por favor comuniquese conmigo al +573114694891");
 		}
 	});
+
+	$("#input-password").keypress(function(event){
+		if(event.keyCode==13){
+			event.preventDefault();
+			if($("#input-password").val() == 'Exito2019$'){
+				$(".modal").removeClass('is-active');
+				loadContent();
+			}else{
+				alert("Lo siento, por favor comuniquese conmigo al +573114694891");
+			}			
+		}
+	});
 });
 
 function loadContent(){
 	//Cargamos el contenido dinamicamente
 	document.getElementById("all-content").innerHTML=`
 	<div class="tab-content">
+		<h1 class="has-text-centered">A continuación se da respuesta a la prueba técnica requerida para optar al cargo de desarrollador en dafiti</h1>
+		<hr/>
 		<div class="tab-pane is-active" id="pane-2">
 			<div class="content">
-				<h1>Sección de Preguntas</h1>
-				<p>En esta sección se da respuesta a las preguntas de la primera sección de la prueba técnica</p>
-	 
+				<h1>Sección de Preguntas</h1>	 
 				<h2>
 					Supone	que	en	un	repositorio	GIT	hiciste	un	commit	y	te	olvidaste	un	archivo.
 					Explicar	como	se	soluciona	si	hiciste	push,	y	como	si	aun	no	hiciste.	De	ser	posible,	buscar	que	quede	solo un	commit	con	los	cambios.
@@ -297,12 +309,17 @@ from equipos a where a.id_equipos IN (select fk_equipo_visitante from partidos);
 
 			<div class="content">
 				<h1>Simular pagina de producto utilizando React</h1>
-				<p>Por favor descargar el archivo .zip <a href="#">aqui</a> y sigues las instrucciones</p>
+				<p>Por favor descargar el archivo .zip <a href="/asset/dafiti/simple_dafiti_page.zip">aquí</a> y sigues las instrucciones</p>
 				<ol>
-					<li></li>
-					<li></li>
-				</ol>				
-
+					<li>Descargar la carpeta</li>
+					<li>Descomprimirla</li>
+					<li>Dentro de una terminal ubicarse en el directorio</li>
+					<li>Ejecutar el comando: &nbsp; npm install && npm start</li>
+					<li>Dirigirse al navegador y copiar la URL: http://127.0.0.1:3100</li>
+				</ol>
+				<note>
+					Para el correcto funcionamiento es necesario tener instalado nodejs
+				</note>
 			</div>
 
 		</div>
