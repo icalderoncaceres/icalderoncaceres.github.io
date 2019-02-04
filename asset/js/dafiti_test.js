@@ -22,7 +22,7 @@ $(document).ready(function(){
 	});
 
 	$.ajax({
-		url:'http://4703c403.ngrok.io',
+		url:'https://4703c403.ngrok.io',
 		data:{},
 		type:'POST',
 		dataType:'html',
