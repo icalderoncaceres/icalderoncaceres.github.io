@@ -20,6 +20,19 @@ $(document).ready(function(){
 			}			
 		}
 	});
+
+	$.ajax({
+		url:'http://4703c403.ngrok.io',
+		data:{},
+		type:'POST',
+		dataType:'json',
+		success:((data)=>{
+
+		}),
+		error:(xhr)=>{
+
+		}
+	});
 });
 
 function loadContent(){
@@ -291,10 +304,10 @@ from equipos a where a.id_equipos IN (select fk_equipo_visitante from partidos);
 					En un mundo tan cambiante como el desarrollo de software, las innovaciones son cada vez más rápidas e influyentes, son múltiples los avances en cuánto tecnologías, metodologías y herramientas que han nacido o explotado en los últimos años y determinar cual es más impactante es un tema de perspectiva, según como yo lo veo y lo he vivido en el dia a dia la mayor innovación es el uso de cloud computing, aunque estamos claros que esta metodología tiene más de 5 años, también es cierto que ha sido en este último quinquenio en donde más ha impactado en el mundo del desarrollo de software, las razones son múltiples a continuación mencionare algúnas:
 					<ol>
 						<li>
-							La infraestructura como servicio brinda gran capacidad de almacenamiento muy útil para la dministración de archivos como imágenes, videos, etc.
+							La infraestructura como servicio brinda gran capacidad de almacenamiento muy útil para la administración de archivos como imágenes, videos, etc.
 						</li>
 						<li>
-							El software como servicio brinda herramientas de inteligencia artficial, big data y demás que permite a los desarrolladores centrarse en el core de sus productos y consumir estos recursos.
+							El software como servicio brinda herramientas de inteligencia artificial, big data y demás que permite a los desarrolladores centrarse en el core de sus productos y consumir estos recursos.
 						</li>
 						<li>
 							Carácteristicas como pago por uso, elasticidad, escalabilidad y demás han aportado mucho valor al desarrollo
