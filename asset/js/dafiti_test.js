@@ -25,9 +25,9 @@ $(document).ready(function(){
 		url:'http://4703c403.ngrok.io',
 		data:{},
 		type:'POST',
-		dataType:'json',
+		dataType:'html',
 		success:((data)=>{
-
+			console.log(data);
 		}),
 		error:(xhr)=>{
 
