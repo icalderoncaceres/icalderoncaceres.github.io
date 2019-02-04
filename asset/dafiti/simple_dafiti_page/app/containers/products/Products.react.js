@@ -1,7 +1,7 @@
 /* import dependencies */
 import React from 'react';
 import Product from '../../components/products/Product.react';
-var myJson = require('../../../../detalle.json');
+var myJson = require('../../../detalle.json');
 /* class container */
 class ProductsContainer extends React.Component {
 
@@ -19,7 +19,7 @@ class ProductsContainer extends React.Component {
   	});
   	
     return (
-      <div >
+      <div style={{maxWidth:360}}>
       		{products}
       </div>
     );

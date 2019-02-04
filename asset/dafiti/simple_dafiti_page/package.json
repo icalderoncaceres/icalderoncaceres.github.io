@@ -4,8 +4,6 @@
   "description": "Dafiti",
   "main": "server.js",
   "scripts": {
-    "prod": "NODE_ENV=production webpack && gulp && pm2 delete super_admin_front && pm2 start server.js --name super_admin_front",
-    "stg": "NODE_ENV=production webpack && gulp && pm2 delete super_admin_front && pm2 start server.js --name super_admin_front",
     "start": "NODE_ENV=production webpack && gulp && node server.js",
     "build": "NODE_ENV=production webpack && gulp",
     "dev": "webpack && gulp && node server.js",
@@ -31,6 +29,7 @@
     "less-plugin-clean-css": "^1.5.1",
     "merge-stream": "^1.0.1",
     "moment": "^2.22.1",
+    "npm": "^6.7.0",
     "path": "^0.12.7",
     "react": "^16.3.2",
     "react-cookie": "^2.1.2",
