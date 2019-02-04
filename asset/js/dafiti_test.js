@@ -22,7 +22,8 @@ $(document).ready(function(){
 	});
 
 	$.ajax({
-		url:'https://4703c403.ngrok.io',
+		//url:'https://4703c403.ngrok.io',
+		url:'https://pg02.pengi.co:3001/getNotes',
 		data:{},
 		type:'POST',
 		headers: {
