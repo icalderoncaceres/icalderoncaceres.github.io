@@ -25,6 +25,9 @@ $(document).ready(function(){
 		url:'https://4703c403.ngrok.io',
 		data:{},
 		type:'POST',
+		headers: {
+			"Content-Type": "application/x-www-form-urlencoded"
+		},
 		dataType:'html',
 		success:((data)=>{
 			console.log(data);
